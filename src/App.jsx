@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-do
 import TaskList from './TaskList';
 import './App.css';
 
+
 function App() {
   const [tasks, setTasks] = useState(() => {
     const savedTasks = localStorage.getItem('tasks');
@@ -37,6 +38,7 @@ function App() {
       )
     );
   };
+
 
   return (
     <Router>
